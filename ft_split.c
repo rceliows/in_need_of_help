@@ -1,7 +1,30 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+/*
+Function name: 
+ft_split
 
+Prototype: 
+char **ft_split(char const *s, char c);
+
+Parameters:
+s: The string to be split.
+c: The delimiter character.
+
+Return value:
+The array of new strings resulting from the split.
+NULL if the allocation fails.
+
+External functs: 
+malloc, free
+
+Description:
+Allocates memory (using malloc(3)) and returns an
+array of strings obtained by splitting ’s’ using
+the character ’c’ as a delimiter. The array must
+end with a NULL pointer.
+*/
 static int	separator_count(char *s, char c)
 {
 	int	n;
